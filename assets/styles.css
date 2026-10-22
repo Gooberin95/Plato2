@@ -1,0 +1,43 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  background-color: #070b16;
+  color: #f6efe4;
+}
+
+body {
+  font-family: "Outfit", "Avenir Next", "Segoe UI", sans-serif;
+}
+
+::selection {
+  background: #e7a322;
+  color: #1a120c;
+}
+
+a {
+  color: inherit;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+input::placeholder {
+  color: rgba(246, 239, 228, 0.46);
+}
+
+.cup-name::placeholder {
+  color: rgba(20, 14, 10, 0.42);
+}
+
+:focus-visible {
+  outline: 2px solid #e7a322;
+  outline-offset: 3px;
+}

@@ -1,0 +1,21 @@
+# Reflex
+.web/
+.states/
+assets/external/
+*.db
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+.venv/
+venv/
+env/
+.env
+
+# OS / editors
+.DS_Store
+.idea/
+.vscode/

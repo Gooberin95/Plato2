@@ -1,0 +1,2 @@
+# Night Palette. Reflex 0.10 supports Python 3.14; this project targets 3.14.4.
+reflex==0.10.0
