@@ -7,14 +7,6 @@ from nightpalette.state import ShopState
 
 app = rx.App(
     html_lang="en",
-    theme=rx.theme(
-        appearance="dark",
-        has_background=False,
-        accent_color="amber",
-        gray_color="slate",
-        radius="large",
-        panel_background="translucent",
-    ),
     stylesheets=[
         "https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;1,9..144,500;1,9..144,700&family=IBM+Plex+Mono:ital,wght@0,400;0,500;1,400&family=Outfit:wght@300;400;500;600;700&display=swap",
         "/styles.css",

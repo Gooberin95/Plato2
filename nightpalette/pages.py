@@ -185,10 +185,12 @@ def _chalk_name(name: str) -> rx.Component:
         name,
         font_family=SERIF,
         font_style="italic",
-        font_size="1.4rem",
+        font_size="1.45rem",
         margin="0",
         color=CREAM,
-        padding="0.15rem 0.7rem 0.15rem 0",
+        padding="0.4rem 0",
+        border_bottom=f"1px dashed {LINE}",
+        width="100%",
     )
 
 
@@ -737,14 +739,13 @@ def evenings() -> rx.Component:
                 on_submit=BoardState.add_name,
                 reset_on_submit=True,
             ),
-            rx.box(
-                rx.foreach(BoardState.names, _chalk_name),
-                display="flex",
-                flex_wrap="wrap",
-                margin_top="1rem",
-                padding_top="0.8rem",
-                border_top=f"1px dashed {LINE}",
-            ),
+rx.box(
+    rx.foreach(BoardState.names, _chalk_name),
+    display="flex",
+    flex_direction="column",
+    margin_top="1rem",
+    padding_top="0.2rem",
+),
             background="rgba(10, 26, 20, 0.8)",
         ),
     )
