@@ -15,6 +15,9 @@ venv/
 env/
 .env
 
+# CI output. The workflow rebuilds this directory.
+deploy-package/
+
 # OS / editors
 .DS_Store
 .idea/

@@ -47,6 +47,10 @@ The first `reflex run` compiles the frontend and downloads Reflex's frontend too
 
 The backend listens on http://localhost:8000. You do not need to open that URL. Stop the app with Ctrl+C.
 
+## Deploying to Azure
+
+Production deploys go to Azure App Service on Linux, using the built-in Python 3.14 runtime and no Docker. The GitHub Actions workflow builds the Reflex frontend, packages it with the Python app, and lets App Service install dependencies and start `startup.sh`. The staging and production jobs stay skipped until the repository variable `AZURE_DEPLOY_ENABLED` is `true`. The full setup is in [DEPLOY.md](DEPLOY.md).
+
 ## Pages
 
 - `/` — the room, today's bar, and a few drinks worth building
